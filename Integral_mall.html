@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>小猪理财</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<style>
+			.mui-bar{box-shadow: none; background-color: #f04d60; }
+			.mui-bar .mui-title{color: #FFFFFF;}
+			.mui-bar-nav{box-shadow:none}
+			.content{width:375px;padding-top:44px}
+			.top{ background: url(images/jfsc_banner@2x.png) no-repeat;background-size:375px 150px;height:150px;width:375px; color: #FFFFFF;}
+			.top .num{font-size:14px;padding-left: 20px;padding-top:8px}
+			.top .zc{text-align: center; background: url(images/yj@2x.png) no-repeat 80% 0; background-size:20px 14px }
+			.big_num{font-size:25px}
+			.top .sum a{ text-align: center; color: #FFFFFF;flex-grow: 1;width:50%; font-size:14px}
+			.top a span{display: block;}
+			.top .sum{ display: flex; justify-content:space-between;flex-wrap:wrap;margin-top:4px}
+			.btn{background:#FFFFFF;display: flex; align-items: center; padding:4px 0; border-bottom: 0.5px solid #e2e2e2; margin-bottom: 10px; padding-left:23px}
+			.btn img{display:block;transform: scale(0.5);}
+			.btn a{display: flex; align-items: center;text-align: center;flex-grow: 1; color: #272525; font-size:12px;}
+			.btn a span{}
+			body{ background:#f8f8f8}
+			.mui-table-view{margin-bottom: 5px; font-size:15px;}
+			.mui-table-view-cell{display: flex;align-items: center; background: url(images/jt_grey@2x.png) no-repeat ;background-position: 95% center;background-size: 6.5px 11.5px;}
+			.mui-table-view-cell img{width:22px}
+			.mui-table-view-cell span{padding-left: 13px;}
+			
+			
+			.mui-table-view:before{height: 0;}
+			.mui-bar-nav a img{width:13px; margin-left: 10px;}
+			.mui-bar-nav{display: flex;align-items: center;}
+			.sub_btn{background: #FFFFFF; display: flex;align-items: center; text-align: center;height:28px;border-bottom: 0.5px solid #e2e2e2;}
+			.sub_btn a{font-size:12px;flex-grow: 1;text-align: center;line-height: 28px;}
+			.sub_btn .a1{ color: #383838;}
+			.sub_btn .a2{ color: #828282;}
+			.info{background:#f8f8f8; display: flex;align-items: center; flex-wrap: wrap;padding:5px 17px}
+			.info ul{background: #FFFFFF;flex-grow: 1;margin:0;padding: 0;margin-right:12px;margin-bottom: 5px;width:160px;padding:10px;padding-bottom: 10px;}
+			.info ul img{ display: block;width:115px;margin:0 auto; border-bottom: 0.5px solid #E2E2E2;padding-bottom: 10px;}
+			.info ul>img{margin-bottom: 15px;}
+			.info ul h2{font-size: 12px; color: #393939;}
+			.info ul span{display: flex;justify-content:space-between}
+			.info ul span a{font-size:10px;color: #4d4d4d;}
+			.info ul span a.jf{display: flex; align-items: center;}
+			.info ul span a.dh{color: #b2b2b2;}
+			.info ul span a img{width:8px;height:8px; margin-right:4px; border: 0;padding-bottom: 0;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="home.html"><img src="images/jt@2x.png"/></a>
+			<h1 class="mui-title">积分商城</h1>
+		</header>
+		<div class="content">
+			<div class="fixed">
+				<div class="top"></div>
+				<div class="btn">
+					<a> <img src="images/3000jf@2x.png"/><span>3000积分</span></a>
+					<a> <img src="images/chf@2x.png"/><span>充话费</span></a>
+					<a> <img src="images/cll@2x.png"/><span>充流量</span></a>
+				</div>
+			</div>
+			<div class="sub_btn">
+				<a class="a1">全部</a>
+				<a class="a2">如何获取积分</a>
+			</div>
+			<div class="info">
+				<ul>
+					<img src="images/dkx@2x.png"/>
+					<h2>美的家用电烤箱</h2>
+					<span><a class="jf"><img src="images/jf(1)@3x.png"/>4000</a><a class="dh">已兑换100件</a></span>
+				</ul>
+				<ul style="margin-right: 0;">
+					<img src="images/djj@2x.png"/>
+					<h2>九阳多功能豆浆机</h2>
+					<span><a class="jf"><img src="images/jf(1)@3x.png"/>1200</a><a class="dh">已兑换5件</a></span>
+				</ul>
+				<ul>
+					<img src="images/dsh@2x.png"/>
+					<h2>苏泊尔自动电水壶</h2>
+					<span><a class="jf"><img src="images/jf(1)@3x.png"/>2800</a><a class="dh">已兑换200件</a></span>
+				</ul>
+				<ul style="margin-right: 0;">
+					<img src="images/cfj@2x.png"/>
+					<h2>飞科家用大功功率吹风机</h2>
+					<span><a class="jf"><img src="images/jf(1)@3x.png"/>8600</a><a class="dh">已兑换10件</a></span>
+				</ul>
+			</div>
+			
+			 
+		</div>		
+			
+			
+			
+			
+		<script src="js/mui.min.js"></script>
+	</body>
+
+</html>

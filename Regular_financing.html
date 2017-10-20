@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>小猪理财</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 550px; 
+				
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px; 
+			}
+			.mui-content{ background:#FFFFFF;}
+			.mui-table-view-cell{padding: 0;margin: 0;}
+			.mui-bar{background-color:#F04D60}
+			.mui-bar .mui-title{color: #FFFFFF;}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{color: #444444; }
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{color: #8a8a8a;}
+			.mui-segmented-control-negative .mui-control-item {color:#F04D60;border-color: inherit;}
+			
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{background: #F04D60; }
+			body{background:#FFFFFF; border:0}
+			.mui-table-view-cell{background: #f8f8f8;}
+			.article{ background: #FFFFFF; margin-bottom:5px;padding-left:8px; padding-bottom:10px; position:relative; border-bottom: 0.3px solid #e2e2e2;/*margin-top:10px*/;background: #ffffff;}
+			.article_title{padding:8px 10px 0 0px;; display: flex; align-items: center}
+			.article_title a{ display:inline-block; color:#ffffff;background: #F04D60;width:15px;  font-size:12px;line-height:15px;height:15px; text-align: center;border-radius:2px; }
+			.article_title span{ font-size:12px; color: #343434;display: inline-block; padding-top:0px; padding-left:9px}
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{font-size:13px;}
+			.article_content_info{padding-left:24px;}
+			.article_content_info .jd span{font-size:12px; margin-right:28px;}
+			.article_content_info input{ color:#FFFFFF ;background:#F04D60 ;border: 1px solid #F04D60; font-size:12px; width:94px;line-height:15.5px; position:absolute;right:11px;bottom:30px;}
+			span.red{color: #F04D60}
+			span.grey{color: #8e8e8e;}
+			.article_content_info a{font-size:10px; color: #4d4d4d; border:1px solid #d2d2d2; border-radius:5px; padding:2.5px 6.5px; margin-right: 10px;;}
+			.article_content_info .line{ margin:6px 0 10px 0;height:6px; background: #DFDFDF; border-radius:5px; width:215px;}
+			.article_content_info .line .red_line1{background: #F04D60; width:20%;border-radius:5px; height:6px;}
+			.article_content_info .line .line2{ width:45%}
+			.mui-table-view-cell:after{height:0;}
+			input.grey_blue{border-color:#cacaca; background: #CACACA;}
+			/*.mui-slider-group{margin-top:10px}*/
+			#scroll3 .mui-table-view>li.one div{display: flex;}
+			#scroll3 .mui-table-view>li.one a{ color: #a2a2a2;  height:30px;line-height:30px ;flex-grow: 1;text-align: center;}
+			#scroll3 .mui-table-view>li.one a.qx{color: #444444; }
+			#scroll3 .mui-table-view>li.one a.ll img{transform: rotate(-90deg);}
+			.mui-bar-nav{box-shadow: none;}
+			.one .article{padding-bottom: 0;}
+			.mui-slider-progress-bar{height:0}
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{background: none;}
+			.mui-bar-nav a img{width:13px; margin-left: 10px;}
+			.mui-bar-nav{display: flex;align-items: center;}
+			.mui-table-view{margin-top:10px}
+			.mui-scroll{background-color: #f8f8f8;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="home.html"><img src="images/jt@2x.png"/></a>
+			<h1 class="mui-title">定期理财</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+						<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="article">
+											<div class="article_title">
+												<a>稳</a>
+												<span>建筑工程企业补充流动资金借款</span>
+											</div>
+											<div class="article_content">
+												<div class="article_content_info">
+													<div class="jd"><span class="red">11％＋2％</span><span>8个月</span><span class="grey">可投 6 0 W</span></div>
+													<div class="line"><div class="red_line1" style="width:33%"></div></div>
+													<a>保障金</a><a>担保</a>
+													<input type="button" value="我要投资">
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="article">
+											<div class="article_title">
+												<a>稳</a>
+												<span>建材经营企业新增订单借款</span>
+											</div>
+											<div class="article_content">
+												<div class="article_content_info">
+													<div class="jd"><span class="red">8％＋1％</span><span>2个月</span><span class="grey">可投 1 0 0 W</span></div>
+													<div class="line"><div class="red_line1" style="width:66%"></div></div>
+													<a>保障金</a><a>担保</a>
+													<input type="button" value="我要投资">
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="article">
+											<div class="article_title">
+												<a>尊</a>
+												<span>电子科技企业补充流动资金借款</span>
+											</div>
+											<div class="article_content">
+												<div class="article_content_info">
+													<div class="jd"><span class="red">６％＋６％</span><span>12个月</span><span class="grey">可投 9 0 W</span></div>
+													<div class="line"><div class="red_line1" style="width:43%"></div></div>
+													<a>承保</a><a>保障金</a><a>担保</a><a>抵押</a>
+													<input type="button" value="我要投资">
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="article">
+											<div class="article_title">
+												<a>新</a>
+												<span>办公用品销售企业新增订单借款</span>
+											</div>
+											<div class="article_content">
+												<div class="article_content_info">
+													<div class="jd"><span class="red">12％＋3％</span><span>1个月</span><span class="grey">可投 2 0 0 W</span></div>
+													<div class="line"><div class="red_line1"></div></div>
+													<a>承保</a><a>保障金</a><a>担保</a><a>抵押</a>
+													<input type="button" value="我要投资">
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<div class="article">
+											<div class="article_title">
+												<a>稳</a>
+												<span>个人经营性贷款</span> 
+											</div>
+											<div class="article_content">
+												<div class="article_content_info">
+													<div class="jd"><span class="red">6％＋2％</span><span>１个月</span><span class="grey">可投 1 0 0 W</span></div>
+													<div class="line"><div class="red_line1"  style="width:73%"></div></div>
+													<a>承保</a><a>保障金</a><a>担保</a>
+													<input type="button" value="我要投资">
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+
+					
+						
+
+					</div>
+				</div>
+			</div>
+
+			
+
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					}
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+
+	</body>
+
+</html>

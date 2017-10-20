@@ -1,0 +1,133 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/update.js"
+    ],
+    "refer": [
+      "guide.html"
+    ]
+  },
+  "guide.html": {
+    "resources": [
+      "images/lb1.jpg",
+      "images/lb2.jpg",
+      "login.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/guide3.jpg",
+      "images/guide1.jpg",
+      "images/guide2.jpg"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "main.html",
+      "css/mui.min.css",
+      "images/mm@2x.png",
+      "images/sj@2x.png",
+      "images/by@2x.png"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "login.html",
+      "js/update.js",
+      "examples/grid-default.html",
+      "examples/slider-default.html",
+      "home.html"
+    ],
+    "refer": [
+      "login.html",
+      "examples/input.html",
+      "examples/grid-default.html",
+      "examples/radio.html",
+      "examples/card.html",
+      "examples/tab-with-viewpagerindicator.html",
+      "examples/tableviews.html",
+      "examples/slider-default.html",
+      "home.html"
+    ]
+  },
+  "examples/grid-default.html": {
+    "resources": [
+      "images/cbd.jpg",
+      "images/muwu.jpg",
+      "images/yuantiao.jpg",
+      "images/shuijiao.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "examples/card.html": {
+    "resources": [
+      "images/logo.png",
+      "examples/checkbox.html",
+      "images/cbd.jpg",
+      "images/yuantiao.jpg"
+    ],
+    "refer": [
+      "examples/checkbox.html"
+    ]
+  },
+  "examples/checkbox.html": {
+    "resources": [
+      "examples/card.html",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "examples/card.html"
+    ]
+  },
+  "examples/input.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "examples/tab-with-viewpagerindicator.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "examples/slider-default.html": {
+    "resources": [
+      "images/cbd.jpg",
+      "images/muwu.jpg",
+      "images/yuantiao.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/shuijiao.jpg"
+    ],
+    "refer": []
+  },
+  "home.html": {
+    "resources": [
+      "images/ico3@2x.png",
+      "images/banner2.jpg",
+      "images/banner1.jpg",
+      "images/ico1@2x.png",
+      "images/banner3.jpg",
+      "images/ico4@2x.png",
+      "images/ico2@2x.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  }
+}

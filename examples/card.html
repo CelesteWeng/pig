@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>小猪理财</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<style>
+			.mui-bar{box-shadow: none; background-color: #f04d60; }
+			.mui-bar .mui-title{color: #FFFFFF;}
+			.mui-bar-nav{box-shadow:none}
+			.content{width:375px;padding-top:44px}
+			.top{ background: url(../images/pic@2x.png) no-repeat;background-size:375px 180px;height:180px;width:100%; color: #FFFFFF;}
+			.top .num{font-size:14px;padding-left: 20px;padding-top:8px}
+			.top .zc{text-align: center; background: url(../images/yj@2x.png) no-repeat 80% 0; background-size:20px 14px }
+			.big_num{font-size:25px}
+			.top .sum a{ text-align: center; color: #FFFFFF;flex-grow: 1;width:50%; font-size:14px}
+			.top a span{display: block;}
+			.top .sum{ display: flex; justify-content:space-between;flex-wrap:wrap;margin-top:4px}
+			.btn{background:#FFFFFF;display: flex; align-items: center;padding:4px 0; border-bottom: 0.5px solid #e2e2e2; margin-bottom: 10px;}
+			.btn img{width: 32px;margin-top:6px;display: inline-block;}
+			.btn a{text-align: center;flex-grow: 1; width:50%; color: #272525; font-size:13px;}
+			.btn a span{position: relative;bottom:11px;left:5px}
+			body{ background:#f8f8f8}
+			.mui-table-view{margin-bottom: 5px; font-size:15px;}
+			.mui-table-view-cell{display: flex;align-items: center; background: url(../images/jt_grey@2x.png) no-repeat ;background-position: 95% center;background-size: 6.5px 11.5px;}
+			.mui-table-view-cell img{width:22px}
+			.mui-table-view-cell span{padding-left: 13px;}
+			.fixed{position:fixed}
+			.mui-scroll{padding-top:242px}
+			.mui-table-view:before{height: 0;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">我的账户</h1>
+			
+		</header>
+		<div class="content">
+			<div class="fixed">
+			<div class="top">
+					<div class="num">132****5014</div>
+					<div class="zc">
+						<span class="big_num">203040</span><br>
+						<span style="font-size:13px">总资产（元）</span>
+					</div>
+					<div class="sum">
+						<a><span>1,000</span><span>账户余额（元）</span></a>
+						<a><span>200,000</span><span>在投金额（元）</span></a>
+						<a style="padding-top:7px"><span>10,050.10</span><span>待收收益（元）</span></a>
+						<a style="padding-top:7px"><span>15,000.67</span><span>累计收益（元）</span></a>
+					</div>
+			</div>
+			<div class="btn">
+				<a style="border-right:0.5px solid #e2e2e2; "> <img src="../images/cz@2x.png"/><span>充值</span></a>
+				<a> <img src="../images/tx@2x.png"/><span style="color: #5f5f5f;">提现</span></a>
+			</div>
+			</div>
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<img src="../images/wdjf@2x.png"/>
+						<span>我的积分</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="../images/wdtz@2x.png"/>
+						<span>我的投资</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="../images/wdyy@2x.png"/>
+						<span>我的预约</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="../images/wddyq@2x.png"/>
+						<span>我的抵用券</span>
+					</li>
+				</ul>				
+			
+			 
+			 
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<img src="../images/hkrl@2x.png"/>
+						<span>回款日历</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="../images/tzzr@2x.png"/>
+						<span>投资转让</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<img src="../images/zjls@2x.png"/>
+						<span>资金流水</span>
+					</li>
+				</ul>				
+			 </div>
+		</div>		
+			
+			
+			
+			
+		<script src="../js/mui.min.js"></script>
+	</body>
+
+</html>

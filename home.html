@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>小猪理财</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+	document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';</script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+	<style>
+		.clear{clear: both;}
+		.mui-col-xs-4 {width: 25%;}
+		.mui-grid-view.mui-grid-9 .mui-media .mui-icon img{ width:35px;}
+		.mui-icon .mui-badge{padding:0 4px;}
+		.mui-bar{background-color:#F04D60}
+		.mui-bar-nav{ box-shadow: none;}
+		.mui-bar .mui-title{color: #FFFFFF;}
+		.mui-content{background: #F8F8F8;}
+		.mui-grid-view.mui-grid-9{ background-color: #FFFFFF; border-top:0;}
+		
+		.article{ background: #FFFFFF; margin-bottom:5px;padding-left:8px; padding-bottom:10px; position:relative; border-bottom: 0.3px solid #e2e2e2;}
+		.article_title{padding:8px 10px 0 0px;; display: flex; align-items: center}
+		.article_title img{ width:15px; display: inline-block; }
+		.article_title span{ font-size:12px; color: #343434;display: inline-block; padding-top:0px; padding-left:9px}
+		
+		.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{font-size:13px;}
+		.article_content_info{padding-left:24px;}
+		.article_content_info .jd span{font-size:12px; margin-right:28px;}
+		.article_content_info input{ color:#FFFFFF ;background:#F04D60 ;border: 1px solid #F04D60; font-size:12px; width:94px;line-height:15.5px; position:absolute;right:11px;bottom:30px;}
+		span.red{color: #F04D60}
+		span.grey{color: #8e8e8e;}
+		.article_content_info a{font-size:10px; color: #4d4d4d; border:1px solid #d2d2d2; border-radius:5px; padding:2.5px 6.5px; margin-right: 10px;;}
+		.article_content_info .line{ margin:6px 0 10px 0;height:6px; background: #DFDFDF; border-radius:5px; width:215px;}
+		.article_content_info .line .red_line1{background: #F04D60; width:20%;border-radius:5px; height:6px;}
+		.article_content_info .line .line2{ width:45%}
+		.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{margin-top:0}
+		.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding:3px 15px;border-right: 0.3px solid #eee;
+    border-bottom: 0.3px solid #eee;}
+		.mui-icon .mui-badge{padding:0px 5px; padding-top:2px;padding-left:5.5px}
+		.mui-slider-indicator .mui-indicator{box-shadow:none;width:8px;height:8px}
+		#Gallery{margin-bottom: 10px;}
+	</style>
+	
+	
+
+	</head>
+
+	<body style="background: #F8F8F8;">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">小猪理财</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner3.jpg">
+					</a>
+				</div> 
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner1.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner2.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/banner3.jpg">
+					</a>
+				</div>
+				
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+			<div id="Gallery" class="mui-slider" style="margin-top:5px;">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Regular_financing.html">
+									<span class="mui-icon"><img src="images/ico1@2x.png"></span>
+									<div class="mui-media-body">定期理财</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Reservation_financing.html">
+									<span class="mui-icon"><img src="images/ico2@2x.png"><span class="mui-badge">5</span></span>
+									<div class="mui-media-body">预约理财</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Bond_market.html">
+									<span class="mui-icon"><img src="images/ico3@2x.png"></span>
+									<div class="mui-media-body">权债市场</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Integral_mall.html">
+									<span class="mui-icon"><img src="images/ico4@2x.png"></span>
+									<div class="mui-media-body">积分商城</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Integral_mall.html">
+									<span class="mui-icon"><img src="images/ico5@2x.png"></span>
+									<div class="mui-media-body">献爱心</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Integral_mall.html">
+								
+									<span class="mui-icon"><img src="images/ico6@2x.png"></span>
+									<div class="mui-media-body">安全中心</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Integral_mall.html">
+									<span class="mui-icon"><img src="images/ico7@2x.png"></span>
+									<div class="mui-media-body">活动专区</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="Integral_mall.html">
+									<span class="mui-icon"><img src="images/ico8@2x.png"></span>
+									<div class="mui-media-body">签到</div>
+								</a>
+							</li>
+						</ul> 
+					</div>
+					
+					
+
+				</div>
+			</div>
+			<div class="article">
+				<div class="article_title">
+					<img src="images/mew@2x.png"/>
+					<span>文化科技企业补充流动资金借款</span>
+				</div>
+				<div class="article_content">
+					<div class="article_content_info">
+						<div class="jd"><span class="red">６％＋６％</span><span>１个月</span><span class="grey">可投 9 0 W</span></div>
+						<div class="line"><div class="red_line1"></div></div>
+						<a>承保</a><a>保障金</a><a>担保</a><a>抵押</a>
+						<input type="button" value="我要投资">
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="article">
+				<div class="article_title">
+					<img src="images/wen@2x.png"/>
+					<span>投资管理企业补充流动资金借款</span>
+				</div>
+				<div class="article_content">
+					<div class="article_content_info">
+						<div class="jd"><span class="red">９％＋２％</span><span>４个月</span><span class="grey">可投 5 0 W</span></div>
+						<div class="line"><div class="red_line1 line2"></div></div>
+						<a>承保</a><a>保障金</a><a>担保</a><a>抵押</a>
+						<input type="button" value="我要投资">
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+					slider.slider({
+						interval: 5000
+					});
+		</script>
+	</body>
+
+</html>

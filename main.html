@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			.mui-tab-item{display: flex;}
+			.mui-icon{}
+			.mui-icon img{width:25px; padding-left:0px; margin:0 auto }
+			.mui-tab-item .icon1{display: none;}
+			.mui-tab-item .icon2{display: block;}
+			.mui-active .icon2{display: none;}
+			.mui-active .icon1{display: block;}
+			.mui-bar-tab .mui-tab-item.mui-active{ color: #f04d60}
+			.mui-icon .mui-badge{padding:0px 5px; padding-top:2px;padding-left:5.5px}
+			#nav{border-top:0;}
+			.mui-bar{ background: #FFFFFF;}
+			.mui-bar-tab .mui-tab-item{height:53px;}
+		</style>
+	</head>
+	<body>
+		
+		<nav class="mui-bar mui-bar-tab" id="nav">
+			<a class="mui-tab-item mui-active" id="home">
+				<span class="mui-icon"><img src="images/sy_r.png" class="icon1"><img src="images/
+				sy.png" class="icon2"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item"  id="infor">
+				<span class="mui-icon"><img src="images/xm_r@2x.png" class="icon1"><img src="images/
+				xm@2x.png" class="icon2"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" id="tel">
+				<span class="mui-icon" ><img src="images/wode_r@2x.png" class="icon1"><img src="images/wode@2x.png" class="icon2"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+			<a class="mui-tab-item"  id="check">
+				<span class="mui-icon "><img src="images/more_r@2x.png" class="icon1"><img src="images/
+				more@2x.png" class="icon2"></span>
+				<span class="mui-tab-label">更多</span>
+			</a>
+		</nav>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/update.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			//默认载入页面---------
+  mui.init({
+    subpages:[{
+   url: 'home.html', 
+    id:'home',
+      styles:{
+        top:'0',//mui标题栏默认高度为45px； 
+        bottom:'53.3px'//默认为0px，可不定义； 
+      },
+    }]
+    
+  });
+			
+			
+//加载页面1---------
+ document.getElementById('home').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'home.html', 
+    id:'home',
+     styles:{
+        top:'0',//mui标题栏默认高度为45px；
+        bottom:'53.3px'//默认为0px，可不定义；
+      }
+  })
+});	
+
+//加载页面2---------
+     document.getElementById('infor').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'examples/tab-with-viewpagerindicator.html', 
+    id:'tab-with-viewpagerindicator',
+     styles:{
+        top:'0',//mui标题栏默认高度为45px；
+        bottom:'53.3px'//默认为0px，可不定义；
+      }
+  })
+});		
+
+ //加载页面3--------- 
+ document.getElementById('tel').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'examples/card.html', 
+    id:'card',
+     styles:{
+        top:'0',//mui标题栏默认高度为45px；
+        bottom:'53.3px'//默认为0px，可不定义；
+      }
+  })
+});	
+
+//加载页面4---------
+ document.getElementById('check').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'examples/tableviews.html', 
+    id:'radio',
+     styles:{
+        top:'0',//mui标题栏默认高度为45px；
+        bottom:'53.3px'//默认为0px，可不定义；
+      }
+  })
+});	
+
+
+			
+		</script>
+	
+</body>
+</html>
